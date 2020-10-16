@@ -39,7 +39,10 @@
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('usuarios.index') }}">{{ __('Usuarios') }}</a>
-                                </li>                                
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('comidas.index') }}">{{ __('Comidas') }}</a>
+                                </li>
                             </ul>
                         @endif
                     @endauth
