@@ -19,6 +19,11 @@
                 <img src="storage/uploads/bebidas.png" width="100%" height="100%"/> <center>Bebidas</center>            
             </div>
         </a>   
+        <a href="/ventas" class="linkinicio nav-link">
+            <div class="divinicio">
+                <img src="storage/uploads/ventas.png" width="100%" height="100%"/> <center>Ventas</center>            
+            </div>
+        </a>  
     </div>
 
     @if(Session::has('Mensaje'))

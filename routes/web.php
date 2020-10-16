@@ -32,4 +32,7 @@ Route::get('/datosbebidas', 'BebidasController@datos')->middleware('auth');
 Route::resource('/detalles', 'DetallesController')->middleware('auth');
 Route::get('/datosdetalles', 'DetallesController@datos')->middleware('auth');
 
+Route::resource('/ventas', 'VentasController')->middleware('auth');
+Route::get('/datosventas', 'VentasController@datos')->middleware('auth');
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
