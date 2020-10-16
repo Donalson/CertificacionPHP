@@ -20,4 +20,6 @@ Route::get('/', function () {
 
 Auth::routes(['register'=>false,'reset'=>false]);
 
+Route::resource('/ventas', 'VentasController')->middleware('auth');
+Route::get('/datosventas', 'VentasController@datos')->middleware('auth');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
