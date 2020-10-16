@@ -20,4 +20,7 @@ Route::get('/', function () {
 
 Auth::routes(['register'=>false,'reset'=>false]);
 
+Route::resource('/usuarios', 'UsuariosController')->middleware('auth');
+Route::get('/datosusuarios', 'UsuariosController@datos')->middleware('auth');
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
