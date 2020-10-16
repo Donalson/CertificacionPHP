@@ -4,7 +4,11 @@
 <div class="container">
 <br><br>
     <div class="row" style="">
-                  
+        <a href="/bebidas" class="linkinicio nav-link">
+            <div class="divinicio">
+                <img src="storage/uploads/bebidas.png" width="100%" height="100%"/> <center>Bebidas</center>            
+            </div>
+        </a>   
     </div>
 
     @if(Session::has('Mensaje'))
