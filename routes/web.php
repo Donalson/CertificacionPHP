@@ -29,4 +29,7 @@ Route::get('/datoscomidas', 'ComidasController@datos')->middleware('auth');
 Route::resource('/bebidas', 'BebidasController')->middleware('auth');
 Route::get('/datosbebidas', 'BebidasController@datos')->middleware('auth');
 
+Route::resource('/detalles', 'DetallesController')->middleware('auth');
+Route::get('/datosdetalles', 'DetallesController@datos')->middleware('auth');
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
